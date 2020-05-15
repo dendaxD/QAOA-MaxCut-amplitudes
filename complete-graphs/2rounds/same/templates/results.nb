@@ -1,0 +1,11 @@
+
+{result, {b, g}} = Maximize[{nstates*probability[a,b], 0 <= a < Pi/2, 0 <= b < Pi-2*a}, {a,b}, Method -> {"SimulatedAnnealing", "PerturbationScale" -> 2}]
+b = ToString[NumberForm[a /. N[b],{5,4},ExponentFunction->(Null&)]]
+g = ToString[NumberForm[b /. N[g],{5,4},ExponentFunction->(Null&)]]
+result = ToString[NumberForm[result,{6,5},ExponentFunction->(Null&)]]
+
+file = OpenAppend["result.txt"]
+Write[file, " ", name, " ", result, " ", b, " ", g]
+
+n=Pi;
+f = probability[x,y];

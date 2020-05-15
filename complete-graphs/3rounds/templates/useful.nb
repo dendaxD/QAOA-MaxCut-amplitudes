@@ -1,0 +1,4 @@
+result = Maximize[{nstates*probability[a, b, c, d, e, f], 0 <= a < Pi/2, 0 <= b < Pi, 0 <= c < Pi/2, 0 <= d < Pi, 0 <= e < Pi/2, 0 <= f < Pi}, {a, b, c, d, e, f}, Method -> {"SimulatedAnnealing", "PerturbationScale" -> 2}];
+Print[name,  ": ", result]
+
+n = Pi;

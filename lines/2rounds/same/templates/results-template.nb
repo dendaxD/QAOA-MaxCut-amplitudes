@@ -1,0 +1,23 @@
+
+k = 0.1;
+
+max = function[0,0];x = 0;y=0;
+For[β= 0 , β <= Pi, β = β+k,
+	For[γ= 0 , γ<= Pi, γ = γ+k,
+		max2 = function[β,γ];
+		If[max2>max,{x = β,y=γ}];
+		max=Max[max, max2];
+	]
+]
+
+result = NMaxValue[{Re[states*function[a,b]/(2^ammount)],x-k<a<x+k,y-k< b < y+k},{a,b}, Method -> {"SimulatedAnnealing", "PerturbationScale" -> 3}]
+file = OpenAppend["result.txt"]
+Write[file, name,  " ", result]
+
+Clear[β,γ]
+file2 = OpenAppend["amplitudes.txt"]
+Write[file2, "\subsubsection*{", name, "} \begin{dmath*}", TeXForm[function[β,γ]], "\end{dmath*}"];
+Write[file2," \textcolor{orange}{p = ", result, "}"]
+
+
+f = function[c,d]; n=Pi;

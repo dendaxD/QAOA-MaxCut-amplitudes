@@ -1,0 +1,36 @@
+
+
+*******************************************************************************
+Mon Jul 30 11:03:27 2018
+
+
+FIT:    data read from "zeroes.txt"
+        format = z
+        #datapoints = 9
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = (10**(a*x + b))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b            
+   0 1.0001000100e+40   0.00e+00  1.06e+21    1.000000e+00   1.000000e+00
+   1 1.5667338303e+39  -5.38e+05  1.06e+20    9.788716e-01   9.989108e-01
+
+The maximum lambda = 1.000000e+20 was exceeded. Fit stopped.
+final sum of squares of residuals : 1.56673e+39
+rel. change during last iteration : -5.38334
+
+degrees of freedom    (FIT_NDF)                        : 7
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.49606e+19
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.23819e+38
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.978872         +/- 7.15         (730.4%)
+b               = 0.998911         +/- 138.6        (1.388e+04%)
+
+correlation matrix of the fit parameters:
+                a      b      
+a               1.000 
+b              -1.000  1.000 

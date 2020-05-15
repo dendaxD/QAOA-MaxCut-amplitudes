@@ -1,0 +1,36 @@
+$Conjugate[x_] := x /. Complex[a_, b_] :> a - I b;
+function[x_, y_] := $Conjugate[Exp[-14 I y] (1 (I Sin[x])^5 Cos[x]^9 + 1 (I Sin[x])^9 Cos[x]^5) + Exp[-12 I y] (19 (I Sin[x])^4 Cos[x]^10 + 19 (I Sin[x])^10 Cos[x]^4 + 30 (I Sin[x])^6 Cos[x]^8 + 30 (I Sin[x])^8 Cos[x]^6 + 5 (I Sin[x])^3 Cos[x]^11 + 5 (I Sin[x])^11 Cos[x]^3 + 24 (I Sin[x])^5 Cos[x]^9 + 24 (I Sin[x])^9 Cos[x]^5 + 26 (I Sin[x])^7 Cos[x]^7) + Exp[-10 I y] (247 (I Sin[x])^5 Cos[x]^9 + 247 (I Sin[x])^9 Cos[x]^5 + 54 (I Sin[x])^3 Cos[x]^11 + 54 (I Sin[x])^11 Cos[x]^3 + 416 (I Sin[x])^7 Cos[x]^7 + 117 (I Sin[x])^4 Cos[x]^10 + 117 (I Sin[x])^10 Cos[x]^4 + 355 (I Sin[x])^6 Cos[x]^8 + 355 (I Sin[x])^8 Cos[x]^6 + 18 (I Sin[x])^2 Cos[x]^12 + 18 (I Sin[x])^12 Cos[x]^2 + 2 (I Sin[x])^1 Cos[x]^13 + 2 (I Sin[x])^13 Cos[x]^1) + Exp[-8 I y] (394 (I Sin[x])^4 Cos[x]^10 + 394 (I Sin[x])^10 Cos[x]^4 + 1090 (I Sin[x])^6 Cos[x]^8 + 1090 (I Sin[x])^8 Cos[x]^6 + 142 (I Sin[x])^3 Cos[x]^11 + 142 (I Sin[x])^11 Cos[x]^3 + 720 (I Sin[x])^5 Cos[x]^9 + 720 (I Sin[x])^9 Cos[x]^5 + 1228 (I Sin[x])^7 Cos[x]^7 + 34 (I Sin[x])^2 Cos[x]^12 + 34 (I Sin[x])^12 Cos[x]^2 + 8 (I Sin[x])^1 Cos[x]^13 + 8 (I Sin[x])^13 Cos[x]^1 + 1 Cos[x]^14 + 1 (I Sin[x])^14) + Exp[-6 I y] (759 (I Sin[x])^5 Cos[x]^9 + 759 (I Sin[x])^9 Cos[x]^5 + 130 (I Sin[x])^3 Cos[x]^11 + 130 (I Sin[x])^11 Cos[x]^3 + 1252 (I Sin[x])^7 Cos[x]^7 + 36 (I Sin[x])^2 Cos[x]^12 + 36 (I Sin[x])^12 Cos[x]^2 + 354 (I Sin[x])^4 Cos[x]^10 + 354 (I Sin[x])^10 Cos[x]^4 + 1094 (I Sin[x])^6 Cos[x]^8 + 1094 (I Sin[x])^8 Cos[x]^6 + 4 (I Sin[x])^1 Cos[x]^13 + 4 (I Sin[x])^13 Cos[x]^1) + Exp[-4 I y] (398 (I Sin[x])^6 Cos[x]^8 + 398 (I Sin[x])^8 Cos[x]^6 + 110 (I Sin[x])^4 Cos[x]^10 + 110 (I Sin[x])^10 Cos[x]^4 + 33 (I Sin[x])^3 Cos[x]^11 + 33 (I Sin[x])^11 Cos[x]^3 + 466 (I Sin[x])^7 Cos[x]^7 + 224 (I Sin[x])^5 Cos[x]^9 + 224 (I Sin[x])^9 Cos[x]^5 + 3 (I Sin[x])^2 Cos[x]^12 + 3 (I Sin[x])^12 Cos[x]^2) + Exp[-2 I y] (44 (I Sin[x])^7 Cos[x]^7 + 27 (I Sin[x])^5 Cos[x]^9 + 27 (I Sin[x])^9 Cos[x]^5 + 7 (I Sin[x])^4 Cos[x]^10 + 7 (I Sin[x])^10 Cos[x]^4 + 35 (I Sin[x])^8 Cos[x]^6 + 35 (I Sin[x])^6 Cos[x]^8) + Exp[0 I y] (1 (I Sin[x])^8 Cos[x]^6 + 1 (I Sin[x])^6 Cos[x]^8)]*
+(Exp[-14 I y] (1 (I Sin[x])^5 Cos[x]^9 + 1 (I Sin[x])^9 Cos[x]^5) + Exp[-12 I y] (19 (I Sin[x])^4 Cos[x]^10 + 19 (I Sin[x])^10 Cos[x]^4 + 30 (I Sin[x])^6 Cos[x]^8 + 30 (I Sin[x])^8 Cos[x]^6 + 5 (I Sin[x])^3 Cos[x]^11 + 5 (I Sin[x])^11 Cos[x]^3 + 24 (I Sin[x])^5 Cos[x]^9 + 24 (I Sin[x])^9 Cos[x]^5 + 26 (I Sin[x])^7 Cos[x]^7) + Exp[-10 I y] (247 (I Sin[x])^5 Cos[x]^9 + 247 (I Sin[x])^9 Cos[x]^5 + 54 (I Sin[x])^3 Cos[x]^11 + 54 (I Sin[x])^11 Cos[x]^3 + 416 (I Sin[x])^7 Cos[x]^7 + 117 (I Sin[x])^4 Cos[x]^10 + 117 (I Sin[x])^10 Cos[x]^4 + 355 (I Sin[x])^6 Cos[x]^8 + 355 (I Sin[x])^8 Cos[x]^6 + 18 (I Sin[x])^2 Cos[x]^12 + 18 (I Sin[x])^12 Cos[x]^2 + 2 (I Sin[x])^1 Cos[x]^13 + 2 (I Sin[x])^13 Cos[x]^1) + Exp[-8 I y] (394 (I Sin[x])^4 Cos[x]^10 + 394 (I Sin[x])^10 Cos[x]^4 + 1090 (I Sin[x])^6 Cos[x]^8 + 1090 (I Sin[x])^8 Cos[x]^6 + 142 (I Sin[x])^3 Cos[x]^11 + 142 (I Sin[x])^11 Cos[x]^3 + 720 (I Sin[x])^5 Cos[x]^9 + 720 (I Sin[x])^9 Cos[x]^5 + 1228 (I Sin[x])^7 Cos[x]^7 + 34 (I Sin[x])^2 Cos[x]^12 + 34 (I Sin[x])^12 Cos[x]^2 + 8 (I Sin[x])^1 Cos[x]^13 + 8 (I Sin[x])^13 Cos[x]^1 + 1 Cos[x]^14 + 1 (I Sin[x])^14) + Exp[-6 I y] (759 (I Sin[x])^5 Cos[x]^9 + 759 (I Sin[x])^9 Cos[x]^5 + 130 (I Sin[x])^3 Cos[x]^11 + 130 (I Sin[x])^11 Cos[x]^3 + 1252 (I Sin[x])^7 Cos[x]^7 + 36 (I Sin[x])^2 Cos[x]^12 + 36 (I Sin[x])^12 Cos[x]^2 + 354 (I Sin[x])^4 Cos[x]^10 + 354 (I Sin[x])^10 Cos[x]^4 + 1094 (I Sin[x])^6 Cos[x]^8 + 1094 (I Sin[x])^8 Cos[x]^6 + 4 (I Sin[x])^1 Cos[x]^13 + 4 (I Sin[x])^13 Cos[x]^1) + Exp[-4 I y] (398 (I Sin[x])^6 Cos[x]^8 + 398 (I Sin[x])^8 Cos[x]^6 + 110 (I Sin[x])^4 Cos[x]^10 + 110 (I Sin[x])^10 Cos[x]^4 + 33 (I Sin[x])^3 Cos[x]^11 + 33 (I Sin[x])^11 Cos[x]^3 + 466 (I Sin[x])^7 Cos[x]^7 + 224 (I Sin[x])^5 Cos[x]^9 + 224 (I Sin[x])^9 Cos[x]^5 + 3 (I Sin[x])^2 Cos[x]^12 + 3 (I Sin[x])^12 Cos[x]^2) + Exp[-2 I y] (44 (I Sin[x])^7 Cos[x]^7 + 27 (I Sin[x])^5 Cos[x]^9 + 27 (I Sin[x])^9 Cos[x]^5 + 7 (I Sin[x])^4 Cos[x]^10 + 7 (I Sin[x])^10 Cos[x]^4 + 35 (I Sin[x])^8 Cos[x]^6 + 35 (I Sin[x])^6 Cos[x]^8) + Exp[0 I y] (1 (I Sin[x])^8 Cos[x]^6 + 1 (I Sin[x])^6 Cos[x]^8))
+
+amplitude[x_,y_] := Exp[-14 I y] (1 (I Sin[x])^5 Cos[x]^9 + 1 (I Sin[x])^9 Cos[x]^5) + Exp[-12 I y] (19 (I Sin[x])^4 Cos[x]^10 + 19 (I Sin[x])^10 Cos[x]^4 + 30 (I Sin[x])^6 Cos[x]^8 + 30 (I Sin[x])^8 Cos[x]^6 + 5 (I Sin[x])^3 Cos[x]^11 + 5 (I Sin[x])^11 Cos[x]^3 + 24 (I Sin[x])^5 Cos[x]^9 + 24 (I Sin[x])^9 Cos[x]^5 + 26 (I Sin[x])^7 Cos[x]^7) + Exp[-10 I y] (247 (I Sin[x])^5 Cos[x]^9 + 247 (I Sin[x])^9 Cos[x]^5 + 54 (I Sin[x])^3 Cos[x]^11 + 54 (I Sin[x])^11 Cos[x]^3 + 416 (I Sin[x])^7 Cos[x]^7 + 117 (I Sin[x])^4 Cos[x]^10 + 117 (I Sin[x])^10 Cos[x]^4 + 355 (I Sin[x])^6 Cos[x]^8 + 355 (I Sin[x])^8 Cos[x]^6 + 18 (I Sin[x])^2 Cos[x]^12 + 18 (I Sin[x])^12 Cos[x]^2 + 2 (I Sin[x])^1 Cos[x]^13 + 2 (I Sin[x])^13 Cos[x]^1) + Exp[-8 I y] (394 (I Sin[x])^4 Cos[x]^10 + 394 (I Sin[x])^10 Cos[x]^4 + 1090 (I Sin[x])^6 Cos[x]^8 + 1090 (I Sin[x])^8 Cos[x]^6 + 142 (I Sin[x])^3 Cos[x]^11 + 142 (I Sin[x])^11 Cos[x]^3 + 720 (I Sin[x])^5 Cos[x]^9 + 720 (I Sin[x])^9 Cos[x]^5 + 1228 (I Sin[x])^7 Cos[x]^7 + 34 (I Sin[x])^2 Cos[x]^12 + 34 (I Sin[x])^12 Cos[x]^2 + 8 (I Sin[x])^1 Cos[x]^13 + 8 (I Sin[x])^13 Cos[x]^1 + 1 Cos[x]^14 + 1 (I Sin[x])^14) + Exp[-6 I y] (759 (I Sin[x])^5 Cos[x]^9 + 759 (I Sin[x])^9 Cos[x]^5 + 130 (I Sin[x])^3 Cos[x]^11 + 130 (I Sin[x])^11 Cos[x]^3 + 1252 (I Sin[x])^7 Cos[x]^7 + 36 (I Sin[x])^2 Cos[x]^12 + 36 (I Sin[x])^12 Cos[x]^2 + 354 (I Sin[x])^4 Cos[x]^10 + 354 (I Sin[x])^10 Cos[x]^4 + 1094 (I Sin[x])^6 Cos[x]^8 + 1094 (I Sin[x])^8 Cos[x]^6 + 4 (I Sin[x])^1 Cos[x]^13 + 4 (I Sin[x])^13 Cos[x]^1) + Exp[-4 I y] (398 (I Sin[x])^6 Cos[x]^8 + 398 (I Sin[x])^8 Cos[x]^6 + 110 (I Sin[x])^4 Cos[x]^10 + 110 (I Sin[x])^10 Cos[x]^4 + 33 (I Sin[x])^3 Cos[x]^11 + 33 (I Sin[x])^11 Cos[x]^3 + 466 (I Sin[x])^7 Cos[x]^7 + 224 (I Sin[x])^5 Cos[x]^9 + 224 (I Sin[x])^9 Cos[x]^5 + 3 (I Sin[x])^2 Cos[x]^12 + 3 (I Sin[x])^12 Cos[x]^2) + Exp[-2 I y] (44 (I Sin[x])^7 Cos[x]^7 + 27 (I Sin[x])^5 Cos[x]^9 + 27 (I Sin[x])^9 Cos[x]^5 + 7 (I Sin[x])^4 Cos[x]^10 + 7 (I Sin[x])^10 Cos[x]^4 + 35 (I Sin[x])^8 Cos[x]^6 + 35 (I Sin[x])^6 Cos[x]^8) + Exp[0 I y] (1 (I Sin[x])^8 Cos[x]^6 + 1 (I Sin[x])^6 Cos[x]^8)
+
+ammount = 14;
+name = "14v6 1 1 2 2 2";
+states = 56;
+
+
+k = 0.1;
+
+
+max = function[0, 0];
+x = 0;
+y = 0;
+
+
+For[β = 0 , β <= Pi/2, β = β + k,
+ 	For[γ = 0 , γ <= Pi/2 - β, γ = γ + k,
+ 	
+  		max2 = function[β, γ];
+  		If[max2 > max, {x = β, y = γ}];
+  		max = Max[max, max2];
+  	]
+ ]
+
+result = NMaximize[{Re[states*function[a, b]/(2^ammount)], x - k < a < x + k, y - k < b < y + k}, {a, b}, Method -> {"SimulatedAnnealing", "PerturbationScale" -> 3}];
+
+Print[name,  ": ", result]
+
+f = function[c, d]; n = Pi;
+Plot3D[f,{c,0,n},{d,0,n}, PlotRange -> All]
+
+ContourPlot[function[x, y], {x, 0, n}, {y, 0, n}, PlotLegends -> Automatic, Contours -> 30]

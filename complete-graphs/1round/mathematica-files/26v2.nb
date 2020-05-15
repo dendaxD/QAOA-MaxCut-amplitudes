@@ -1,0 +1,34 @@
+$Conjugate[x_] := x /. Complex[a_, b_] :> a - I b;
+function[x_, y_] := $Conjugate[Exp[325.0 I y/2] (1 (-I Sin[x])^2 Cos[x]^24 + 1 (-I Sin[x])^24 Cos[x]^2) + Exp[275.0 I y/2] (2 (-I Sin[x])^1 Cos[x]^25 + 2 (-I Sin[x])^25 Cos[x]^1 + 24 (-I Sin[x])^3 Cos[x]^23 + 24 (-I Sin[x])^23 Cos[x]^3) + Exp[229.0 I y/2] (1 Cos[x]^26 + 1 (-I Sin[x])^26 + 48 (-I Sin[x])^2 Cos[x]^24 + 48 (-I Sin[x])^24 Cos[x]^2 + 276 (-I Sin[x])^4 Cos[x]^22 + 276 (-I Sin[x])^22 Cos[x]^4) + Exp[187.0 I y/2] (24 (-I Sin[x])^1 Cos[x]^25 + 24 (-I Sin[x])^25 Cos[x]^1 + 552 (-I Sin[x])^3 Cos[x]^23 + 552 (-I Sin[x])^23 Cos[x]^3 + 2024 (-I Sin[x])^5 Cos[x]^21 + 2024 (-I Sin[x])^21 Cos[x]^5) + Exp[149.0 I y/2] (276 (-I Sin[x])^2 Cos[x]^24 + 276 (-I Sin[x])^24 Cos[x]^2 + 4048 (-I Sin[x])^4 Cos[x]^22 + 4048 (-I Sin[x])^22 Cos[x]^4 + 10626 (-I Sin[x])^6 Cos[x]^20 + 10626 (-I Sin[x])^20 Cos[x]^6) + Exp[115.0 I y/2] (2024 (-I Sin[x])^3 Cos[x]^23 + 2024 (-I Sin[x])^23 Cos[x]^3 + 21252 (-I Sin[x])^5 Cos[x]^21 + 21252 (-I Sin[x])^21 Cos[x]^5 + 42504 (-I Sin[x])^7 Cos[x]^19 + 42504 (-I Sin[x])^19 Cos[x]^7) + Exp[85.0 I y/2] (10626 (-I Sin[x])^4 Cos[x]^22 + 10626 (-I Sin[x])^22 Cos[x]^4 + 85008 (-I Sin[x])^6 Cos[x]^20 + 85008 (-I Sin[x])^20 Cos[x]^6 + 134596 (-I Sin[x])^8 Cos[x]^18 + 134596 (-I Sin[x])^18 Cos[x]^8) + Exp[59.0 I y/2] (42504 (-I Sin[x])^5 Cos[x]^21 + 42504 (-I Sin[x])^21 Cos[x]^5 + 269192 (-I Sin[x])^7 Cos[x]^19 + 269192 (-I Sin[x])^19 Cos[x]^7 + 346104 (-I Sin[x])^9 Cos[x]^17 + 346104 (-I Sin[x])^17 Cos[x]^9) + Exp[37.0 I y/2] (134596 (-I Sin[x])^6 Cos[x]^20 + 134596 (-I Sin[x])^20 Cos[x]^6 + 692208 (-I Sin[x])^8 Cos[x]^18 + 692208 (-I Sin[x])^18 Cos[x]^8 + 735471 (-I Sin[x])^10 Cos[x]^16 + 735471 (-I Sin[x])^16 Cos[x]^10) + Exp[19.0 I y/2] (346104 (-I Sin[x])^7 Cos[x]^19 + 346104 (-I Sin[x])^19 Cos[x]^7 + 1470942 (-I Sin[x])^9 Cos[x]^17 + 1470942 (-I Sin[x])^17 Cos[x]^9 + 1307504 (-I Sin[x])^11 Cos[x]^15 + 1307504 (-I Sin[x])^15 Cos[x]^11) + Exp[5.0 I y/2] (735471 (-I Sin[x])^8 Cos[x]^18 + 735471 (-I Sin[x])^18 Cos[x]^8 + 2615008 (-I Sin[x])^10 Cos[x]^16 + 2615008 (-I Sin[x])^16 Cos[x]^10 + 1961256 (-I Sin[x])^12 Cos[x]^14 + 1961256 (-I Sin[x])^14 Cos[x]^12) + Exp[-5.0 I y/2] (1307504 (-I Sin[x])^9 Cos[x]^17 + 1307504 (-I Sin[x])^17 Cos[x]^9 + 3922512 (-I Sin[x])^11 Cos[x]^15 + 3922512 (-I Sin[x])^15 Cos[x]^11 + 4992288 (-I Sin[x])^13 Cos[x]^13) + Exp[-11.0 I y/2] (1961256 (-I Sin[x])^10 Cos[x]^16 + 1961256 (-I Sin[x])^16 Cos[x]^10 + 7696444 (-I Sin[x])^12 Cos[x]^14 + 7696444 (-I Sin[x])^14 Cos[x]^12) + Exp[-13.0 I y/2] (2496144 (-I Sin[x])^11 Cos[x]^15 + 2496144 (-I Sin[x])^15 Cos[x]^11 + 5408312 (-I Sin[x])^13 Cos[x]^13)]*
+(Exp[325.0 I y/2] (1 (-I Sin[x])^2 Cos[x]^24 + 1 (-I Sin[x])^24 Cos[x]^2) + Exp[275.0 I y/2] (2 (-I Sin[x])^1 Cos[x]^25 + 2 (-I Sin[x])^25 Cos[x]^1 + 24 (-I Sin[x])^3 Cos[x]^23 + 24 (-I Sin[x])^23 Cos[x]^3) + Exp[229.0 I y/2] (1 Cos[x]^26 + 1 (-I Sin[x])^26 + 48 (-I Sin[x])^2 Cos[x]^24 + 48 (-I Sin[x])^24 Cos[x]^2 + 276 (-I Sin[x])^4 Cos[x]^22 + 276 (-I Sin[x])^22 Cos[x]^4) + Exp[187.0 I y/2] (24 (-I Sin[x])^1 Cos[x]^25 + 24 (-I Sin[x])^25 Cos[x]^1 + 552 (-I Sin[x])^3 Cos[x]^23 + 552 (-I Sin[x])^23 Cos[x]^3 + 2024 (-I Sin[x])^5 Cos[x]^21 + 2024 (-I Sin[x])^21 Cos[x]^5) + Exp[149.0 I y/2] (276 (-I Sin[x])^2 Cos[x]^24 + 276 (-I Sin[x])^24 Cos[x]^2 + 4048 (-I Sin[x])^4 Cos[x]^22 + 4048 (-I Sin[x])^22 Cos[x]^4 + 10626 (-I Sin[x])^6 Cos[x]^20 + 10626 (-I Sin[x])^20 Cos[x]^6) + Exp[115.0 I y/2] (2024 (-I Sin[x])^3 Cos[x]^23 + 2024 (-I Sin[x])^23 Cos[x]^3 + 21252 (-I Sin[x])^5 Cos[x]^21 + 21252 (-I Sin[x])^21 Cos[x]^5 + 42504 (-I Sin[x])^7 Cos[x]^19 + 42504 (-I Sin[x])^19 Cos[x]^7) + Exp[85.0 I y/2] (10626 (-I Sin[x])^4 Cos[x]^22 + 10626 (-I Sin[x])^22 Cos[x]^4 + 85008 (-I Sin[x])^6 Cos[x]^20 + 85008 (-I Sin[x])^20 Cos[x]^6 + 134596 (-I Sin[x])^8 Cos[x]^18 + 134596 (-I Sin[x])^18 Cos[x]^8) + Exp[59.0 I y/2] (42504 (-I Sin[x])^5 Cos[x]^21 + 42504 (-I Sin[x])^21 Cos[x]^5 + 269192 (-I Sin[x])^7 Cos[x]^19 + 269192 (-I Sin[x])^19 Cos[x]^7 + 346104 (-I Sin[x])^9 Cos[x]^17 + 346104 (-I Sin[x])^17 Cos[x]^9) + Exp[37.0 I y/2] (134596 (-I Sin[x])^6 Cos[x]^20 + 134596 (-I Sin[x])^20 Cos[x]^6 + 692208 (-I Sin[x])^8 Cos[x]^18 + 692208 (-I Sin[x])^18 Cos[x]^8 + 735471 (-I Sin[x])^10 Cos[x]^16 + 735471 (-I Sin[x])^16 Cos[x]^10) + Exp[19.0 I y/2] (346104 (-I Sin[x])^7 Cos[x]^19 + 346104 (-I Sin[x])^19 Cos[x]^7 + 1470942 (-I Sin[x])^9 Cos[x]^17 + 1470942 (-I Sin[x])^17 Cos[x]^9 + 1307504 (-I Sin[x])^11 Cos[x]^15 + 1307504 (-I Sin[x])^15 Cos[x]^11) + Exp[5.0 I y/2] (735471 (-I Sin[x])^8 Cos[x]^18 + 735471 (-I Sin[x])^18 Cos[x]^8 + 2615008 (-I Sin[x])^10 Cos[x]^16 + 2615008 (-I Sin[x])^16 Cos[x]^10 + 1961256 (-I Sin[x])^12 Cos[x]^14 + 1961256 (-I Sin[x])^14 Cos[x]^12) + Exp[-5.0 I y/2] (1307504 (-I Sin[x])^9 Cos[x]^17 + 1307504 (-I Sin[x])^17 Cos[x]^9 + 3922512 (-I Sin[x])^11 Cos[x]^15 + 3922512 (-I Sin[x])^15 Cos[x]^11 + 4992288 (-I Sin[x])^13 Cos[x]^13) + Exp[-11.0 I y/2] (1961256 (-I Sin[x])^10 Cos[x]^16 + 1961256 (-I Sin[x])^16 Cos[x]^10 + 7696444 (-I Sin[x])^12 Cos[x]^14 + 7696444 (-I Sin[x])^14 Cos[x]^12) + Exp[-13.0 I y/2] (2496144 (-I Sin[x])^11 Cos[x]^15 + 2496144 (-I Sin[x])^15 Cos[x]^11 + 5408312 (-I Sin[x])^13 Cos[x]^13))
+
+ammount = 26;
+name = "26v2";
+states = 650;
+
+k = 0.1;
+
+
+max = function[0, 0];
+x = 0;
+y = 0;
+
+
+For[β = 0 , β <= Pi/2, β = β + k,
+ 	For[γ = 0 , γ <= 2Pi - 4β, γ = γ + k,
+ 	
+  		max2 = function[β, γ];
+  		If[max2 > max, {x = β, y = γ}];
+  		max = Max[max, max2];
+  	]
+ ]
+
+result = NMaximize[{Re[states*function[a, b]/(2^ammount)], x - k < a < x + k, y - k < b < y + k}, {a, b}, Method -> {"SimulatedAnnealing", "PerturbationScale" -> 3}];
+
+Print[name,  ": ", result]
+
+f = function[c, d]; n = Pi;
+
+Plot3D[f,{c,-2n,2n},{d,-2n,2n}, PlotRange -> All]
+
+ContourPlot[function[x, y], {x, -2n, 2n}, {y, -2n, 2n}, PlotLegends -> Automatic, Contours -> 30]

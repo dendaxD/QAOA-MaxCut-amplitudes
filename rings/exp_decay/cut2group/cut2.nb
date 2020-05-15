@@ -1,0 +1,24 @@
+a4[x_] := 4*Abs[(I Sin[x])^1 Cos[x]^3 + (I Sin[x])^2 Cos[x]^2 + (I Sin[x])^3 Cos[x]^1]/Sqrt[2^4];
+a6[x_] := 6*Abs[(I Sin[x])^1 Cos[x]^5 + (I Sin[x])^2 Cos[x]^4 + (I Sin[x])^3 Cos[x]^3 + (I Sin[x])^4 Cos[x]^2 + (I Sin[x])^5 Cos[x]^1]/Sqrt[2^6];
+a8[x_] := 8*Abs[(I Sin[x])^1 Cos[x]^7 + (I Sin[x])^2 Cos[x]^6 + (I Sin[x])^3 Cos[x]^5 + (I Sin[x])^4 Cos[x]^4 + (I Sin[x])^5 Cos[x]^3 + (I Sin[x])^6 Cos[x]^2 + (I Sin[x])^7 Cos[x]^1]/Sqrt[2^8];
+a10[x_] := 10*Abs[(I Sin[x])^1 Cos[x]^9 + (I Sin[x])^2 Cos[x]^8 + (I Sin[x])^3 Cos[x]^7 + (I Sin[x])^4 Cos[x]^6 + (I Sin[x])^5 Cos[x]^5 + (I Sin[x])^6 Cos[x]^4 + (I Sin[x])^7 Cos[x]^3 + (I Sin[x])^8 Cos[x]^2 + (I Sin[x])^9 Cos[x]^1]/Sqrt[2^10];
+a12[x_] := 12*Abs[(I Sin[x])^1 Cos[x]^11 + (I Sin[x])^2 Cos[x]^10 + (I Sin[x])^3 Cos[x]^9 + (I Sin[x])^4 Cos[x]^8 + (I Sin[x])^5 Cos[x]^7 + (I Sin[x])^6 Cos[x]^6 + (I Sin[x])^7 Cos[x]^5 + (I Sin[x])^8 Cos[x]^4 + (I Sin[x])^9 Cos[x]^3 + (I Sin[x])^10 Cos[x]^2 + (I Sin[x])^11 Cos[x]^1]/Sqrt[2^12];
+a14[x_] := 14*Abs[(I Sin[x])^1 Cos[x]^13 + (I Sin[x])^2 Cos[x]^12 + (I Sin[x])^3 Cos[x]^11 + (I Sin[x])^4 Cos[x]^10 + (I Sin[x])^5 Cos[x]^9 + (I Sin[x])^6 Cos[x]^8 + (I Sin[x])^7 Cos[x]^7 + (I Sin[x])^8 Cos[x]^6 + (I Sin[x])^9 Cos[x]^5 + (I Sin[x])^10 Cos[x]^4 + (I Sin[x])^11 Cos[x]^3 + (I Sin[x])^12 Cos[x]^2 + (I Sin[x])^13 Cos[x]^1]/Sqrt[2^14];
+a16[x_] := 16*Abs[(I Sin[x])^1 Cos[x]^15 + (I Sin[x])^2 Cos[x]^14 + (I Sin[x])^3 Cos[x]^13 + (I Sin[x])^4 Cos[x]^12 + (I Sin[x])^5 Cos[x]^11 + (I Sin[x])^6 Cos[x]^10 + (I Sin[x])^7 Cos[x]^9 + (I Sin[x])^8 Cos[x]^8 + (I Sin[x])^9 Cos[x]^7 + (I Sin[x])^10 Cos[x]^6 + (I Sin[x])^11 Cos[x]^5 + (I Sin[x])^12 Cos[x]^4 + (I Sin[x])^13 Cos[x]^3 + (I Sin[x])^14 Cos[x]^2 + (I Sin[x])^15 Cos[x]^1]/Sqrt[2^16];
+a18[x_] := 18*Abs[(I Sin[x])^1 Cos[x]^17 + (I Sin[x])^2 Cos[x]^16 + (I Sin[x])^3 Cos[x]^15 + (I Sin[x])^4 Cos[x]^14 + (I Sin[x])^5 Cos[x]^13 + (I Sin[x])^6 Cos[x]^12 + (I Sin[x])^7 Cos[x]^11 + (I Sin[x])^8 Cos[x]^10 + (I Sin[x])^9 Cos[x]^9 + (I Sin[x])^10 Cos[x]^8 + (I Sin[x])^11 Cos[x]^7 + (I Sin[x])^12 Cos[x]^6 + (I Sin[x])^13 Cos[x]^5 + (I Sin[x])^14 Cos[x]^4 + (I Sin[x])^15 Cos[x]^3 + (I Sin[x])^16 Cos[x]^2 + (I Sin[x])^17 Cos[x]^1]/Sqrt[2^18];
+Print[(I Sin[x])^1 Cos[x]^3 + (I Sin[x])^2 Cos[x]^2 + (I Sin[x])^3 Cos[x]^1//ComplexExpand]
+Print[(I Sin[x])^1 Cos[x]^5 + (I Sin[x])^2 Cos[x]^4 + (I Sin[x])^3 Cos[x]^3 + (I Sin[x])^4 Cos[x]^2 + (I Sin[x])^5 Cos[x]^1//ComplexExpand]
+Print[(I Sin[x])^1 Cos[x]^7 + (I Sin[x])^2 Cos[x]^6 + (I Sin[x])^3 Cos[x]^5 + (I Sin[x])^4 Cos[x]^4 + (I Sin[x])^5 Cos[x]^3 + (I Sin[x])^6 Cos[x]^2 + (I Sin[x])^7 Cos[x]^1//ComplexExpand]
+Print[(I Sin[x])^1 Cos[x]^9 + (I Sin[x])^2 Cos[x]^8 + (I Sin[x])^3 Cos[x]^7 + (I Sin[x])^4 Cos[x]^6 + (I Sin[x])^5 Cos[x]^5 + (I Sin[x])^6 Cos[x]^4 + (I Sin[x])^7 Cos[x]^3 + (I Sin[x])^8 Cos[x]^2 + (I Sin[x])^9 Cos[x]^1//ComplexExpand]
+Print[(I Sin[x])^1 Cos[x]^11 + (I Sin[x])^2 Cos[x]^10 + (I Sin[x])^3 Cos[x]^9 + (I Sin[x])^4 Cos[x]^8 + (I Sin[x])^5 Cos[x]^7 + (I Sin[x])^6 Cos[x]^6 + (I Sin[x])^7 Cos[x]^5 + (I Sin[x])^8 Cos[x]^4 + (I Sin[x])^9 Cos[x]^3 + (I Sin[x])^10 Cos[x]^2 + (I Sin[x])^11 Cos[x]^1//ComplexExpand]
+Print[(I Sin[x])^1 Cos[x]^13 + (I Sin[x])^2 Cos[x]^12 + (I Sin[x])^3 Cos[x]^11 + (I Sin[x])^4 Cos[x]^10 + (I Sin[x])^5 Cos[x]^9 + (I Sin[x])^6 Cos[x]^8 + (I Sin[x])^7 Cos[x]^7 + (I Sin[x])^8 Cos[x]^6 + (I Sin[x])^9 Cos[x]^5 + (I Sin[x])^10 Cos[x]^4 + (I Sin[x])^11 Cos[x]^3 + (I Sin[x])^12 Cos[x]^2 + (I Sin[x])^13 Cos[x]^1//ComplexExpand]
+Print[(I Sin[x])^1 Cos[x]^15 + (I Sin[x])^2 Cos[x]^14 + (I Sin[x])^3 Cos[x]^13 + (I Sin[x])^4 Cos[x]^12 + (I Sin[x])^5 Cos[x]^11 + (I Sin[x])^6 Cos[x]^10 + (I Sin[x])^7 Cos[x]^9 + (I Sin[x])^8 Cos[x]^8 + (I Sin[x])^9 Cos[x]^7 + (I Sin[x])^10 Cos[x]^6 + (I Sin[x])^11 Cos[x]^5 + (I Sin[x])^12 Cos[x]^4 + (I Sin[x])^13 Cos[x]^3 + (I Sin[x])^14 Cos[x]^2 + (I Sin[x])^15 Cos[x]^1//ComplexExpand]
+Print[(I Sin[x])^1 Cos[x]^17 + (I Sin[x])^2 Cos[x]^16 + (I Sin[x])^3 Cos[x]^15 + (I Sin[x])^4 Cos[x]^14 + (I Sin[x])^5 Cos[x]^13 + (I Sin[x])^6 Cos[x]^12 + (I Sin[x])^7 Cos[x]^11 + (I Sin[x])^8 Cos[x]^10 + (I Sin[x])^9 Cos[x]^9 + (I Sin[x])^10 Cos[x]^8 + (I Sin[x])^11 Cos[x]^7 + (I Sin[x])^12 Cos[x]^6 + (I Sin[x])^13 Cos[x]^5 + (I Sin[x])^14 Cos[x]^4 + (I Sin[x])^15 Cos[x]^3 + (I Sin[x])^16 Cos[x]^2 + (I Sin[x])^17 Cos[x]^1//ComplexExpand]
+NMaximize[{a4[x], 0 <= x <= Pi}, x]
+NMaximize[{a6[x], 0 <= x <= Pi}, x]
+NMaximize[{a8[x], 0 <= x <= Pi}, x]
+NMaximize[{a10[x], 0 <= x <= Pi}, x]
+NMaximize[{a12[x], 0 <= x <= Pi}, x]
+NMaximize[{a14[x], 0 <= x <= Pi}, x]
+NMaximize[{a16[x], 0 <= x <= Pi}, x]
+NMaximize[{a18[x], 0 <= x <= Pi}, x]
