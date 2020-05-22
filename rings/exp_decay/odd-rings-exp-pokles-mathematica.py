@@ -15,8 +15,8 @@ def edges(n):
 	return edges
 
 
-def penalty(label):
-	return sum(map(int, label.split())) - len(label.split()) if len(label.split())>1 else sum(map(int, label.split()))
+def cut(label):
+	return sum(map(int, label.split())) - 2*len(label.split()) if len(label.split())>1 else sum(map(int, label.split()))
 
 
 # label is used to unambiguously identify a group
@@ -84,33 +84,33 @@ def rotate(array, x):
 	return array[-x:] + array[0:-x]
 
 
-def create_penalty_to_amplitude_dict(n):
+def create_cut_to_amplitude_dict(n):
 	l = str(n)
 	states = groupsOfStates(n)
 
 	amplitudes = {}
 	labels = states.keys()
 
-	constants = {} #penalty to (number of sinuses to how many times repeated) - all we need to construct the amplitude
+	constants = {} #cut to (number of sinuses to how many times repeated) - all we need to construct the amplitude
 	#it's enough to compute the amplitude for representant of the group
 	representant = states[l][0]
 
 	#here we fill the constants directory - gain all informations needed for amplitude creation
 	for label in labels:
 
-		if penalty(label) not in constants.keys():
-			constants[ penalty(label) ] = {}
+		if cut(label) not in constants.keys():
+			constants[ cut(label) ] = {}
 
 		for state in states[label]:
 			numOfSinuses = hamming_distance(representant, state)
 
-			if numOfSinuses in constants[ penalty(label) ].keys():
-				constants[ penalty(label) ][ numOfSinuses ] += 1
+			if numOfSinuses in constants[ cut(label) ].keys():
+				constants[ cut(label) ][ numOfSinuses ] += 1
 			else:
-				constants[ penalty(label) ][ numOfSinuses ] = 1
+				constants[ cut(label) ][ numOfSinuses ] = 1
 		
 	#here we create the amplitude for l
-	penalty_to_amplitude = {}
+	cut_to_amplitude = {}
 	for c in constants.keys():
 		amplitude = ''
 		for numOfSin in constants[c].keys():
@@ -124,33 +124,33 @@ def create_penalty_to_amplitude_dict(n):
 			else:
 				amplitude += f'(I Sin[β])^{numOfSin} Cos[β]^{n - numOfSin}'
 			amplitude += ' + '
-		penalty_to_amplitude[c] = '(' + amplitude[:-3] + f')/Sqrt[2]^{n}' #[:-3] to remove additional ' + '
-	return penalty_to_amplitude
+		cut_to_amplitude[c] = '(' + amplitude[:-3] + f')/Sqrt[2]^{n}' #[:-3] to remove additional ' + '
+	return cut_to_amplitude
 
-#UPPER BOUND
-with open('upper bound', 'w') as data:
-	for n in range(3,21,2):
-		with open('maxima.txt', 'w') as f:#to create the file
-			pass
+# #UPPER BOUND
+# with open('upper bound', 'w') as data:
+# 	for n in range(3,21,2):
+# 		with open('maxima.txt', 'w') as f:#to create the file
+# 			pass
 
-		for epenalty, ampl in create_penalty_to_amplitude_dict(n).items():
-			# print(epenalty, ':\n', ampl)
+# 		for ecut, ampl in create_cut_to_amplitude_dict(n).items():
+# 			# print(ecut, ':\n', ampl)
 
-			with open('maximize.nb', 'w') as mathematica, open('template.txt', 'r') as template:
-				mathematica.write(	'amplitude[β_] := ' + ampl + '\n\n' +
-							  		'magnitude[x_] := Abs[amplitude[x]]^2 // ComplexExpand\n')
-				for line in template:
-					mathematica.write(line)
+# 			with open('maximize.nb', 'w') as mathematica, open('template.txt', 'r') as template:
+# 				mathematica.write(	'amplitude[β_] := ' + ampl + '\n\n' +
+# 							  		'magnitude[x_] := Abs[amplitude[x]]^2 // ComplexExpand\n')
+# 				for line in template:
+# 					mathematica.write(line)
 
-			#here we run the mathematica file and then we remove it
-			subprocess.run(['math', '-script', 'maximize.nb'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-			remove('maximize.nb')
+# 			#here we run the mathematica file and then we remove it
+# 			subprocess.run(['math', '-script', 'maximize.nb'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+# 			remove('maximize.nb')
 
-		with open('maxima.txt', 'r') as f:
-			bound = sum(map(lambda x: float(x.strip().replace('*^','e')),f.readlines()))
-		print(n, ' ', bound, ' ', bound**2)
-		data.write(f'{n}\t{bound**2}\n')
-		remove('maxima.txt')
+# 		with open('maxima.txt', 'r') as f:
+# 			bound = sum(map(lambda x: float(x.strip().replace('*^','e')),f.readlines()))
+# 		print(n, ' ', bound, ' ', bound**2)
+# 		data.write(f'{n}\t{bound**2}\n')
+# 		remove('maxima.txt')
 
 #MAXIMIZING P₀₀...₀
 with open('maximizing p₀₀...₀', 'w') as data, open('minimizing average energy', 'w') as data2:
@@ -159,8 +159,8 @@ with open('maximizing p₀₀...₀', 'w') as data, open('minimizing average ene
 			pass
 
 		amplitude = ''
-		for epenalty, ampl in create_penalty_to_amplitude_dict(n).items():
-			amplitude += f' + Exp[-I {epenalty} γ]({ampl})'
+		for ecut, ampl in create_cut_to_amplitude_dict(n).items():
+			amplitude += f' + Exp[-I {ecut} γ]({ampl})'
 		amplitude = amplitude[3:]
 		print(f'{n}:',amplitude)
 

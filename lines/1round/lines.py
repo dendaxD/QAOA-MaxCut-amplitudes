@@ -15,7 +15,7 @@ def edges(n):
 def cut(state, edges):
 	cut = 0
 	for edge in edges:
-		cut += 1 if state[edge[0]] == state[edge[1]] else 0
+		cut += 1 if state[edge[0]] == state[edge[1]] else -1
 	return cut
 
 
@@ -109,8 +109,8 @@ def createLabelToAmplitudeDict(n, labelToStatesDict):
 	return labelToAmplitudeDict
 
 def main():
-	start = 3
-	end = 10
+	start = 4
+	end = 4
 
 
 	with open('result.txt', 'w') as f:#to delete any content

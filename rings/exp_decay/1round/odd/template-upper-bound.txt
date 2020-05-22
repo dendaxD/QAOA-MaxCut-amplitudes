@@ -1,0 +1,2 @@
+file = OpenAppend["maxima.txt"]
+Write[file, NMaxValue[{Sqrt[magnitude[x]], 0 <= x <= Pi/2}, x]];

@@ -15,8 +15,8 @@ def edges(n):
 	return edges
 
 
-def penalty(label):
-	return sum(map(int, label.split())) - len(label.split()) if len(label.split())>1 else sum(map(int, label.split()))
+def cut(label):
+	return sum(map(int, label.split())) - 2*len(label.split()) if len(label.split())>1 else sum(map(int, label.split()))
 
 
 # label is used to unambiguously identify a group
@@ -84,33 +84,32 @@ def rotate(array, x):
 	return array[-x:] + array[0:-x]
 
 
-#THE MOST IMPORTANT
-def create_penalty_to_amplitude_dict(n):
+def create_cut_to_amplitude_dict(n):
 	l = str(n)
 	states = groupsOfStates(n)
 
 	amplitudes = {}
 	labels = states.keys()
 
-	constants = {} #penalty to (number of sinuses to how many times repeated) - all we need to construct the amplitude
+	constants = {} #cut to (number of sinuses to how many times repeated) - all we need to construct the amplitude
 	#it's enough to compute the amplitude for representant of the group
 	representant = states[l][0]
 
 	#here we fill the constants directory - gain all informations needed for amplitude creation
 	for label in labels:
 
-		if penalty(label) not in constants.keys():
-			constants[ penalty(label) ] = {}
+		if cut(label) not in constants.keys():
+			constants[ cut(label) ] = {}
 
 		for state in states[label]:
 			numOfSinuses = hamming_distance(representant, state)
 
-			if numOfSinuses in constants[ penalty(label) ].keys():
-				constants[ penalty(label) ][ numOfSinuses ] += 1
+			if numOfSinuses in constants[ cut(label) ].keys():
+				constants[ cut(label) ][ numOfSinuses ] += 1
 			else:
-				constants[ penalty(label) ][ numOfSinuses ] = 1
+				constants[ cut(label) ][ numOfSinuses ] = 1
 
-	penalty_to_amplitude = {}
+	cut_to_amplitude = {}
 	x = Symbol('x', real=True)
 	for c in constants.keys():
 		amplitude = 0
@@ -122,18 +121,18 @@ def create_penalty_to_amplitude_dict(n):
 				amplitude += coef*cos(x)**n
 			else:
 				amplitude += coef*(1j*sin(x))**numOfSin * cos(x)**(n - numOfSin)
-		penalty_to_amplitude[c] = amplitude/sqrt(2**n)
-	return penalty_to_amplitude
+		cut_to_amplitude[c] = amplitude/sqrt(2**n)
+	return cut_to_amplitude
 
 for n in range(4,20,2):
 	x = Symbol('x', real=True)
 	lengths = []
-	for epenalty, ampl in create_penalty_to_amplitude_dict(n).items():
-		# print(epenalty, ':\n', ampl)
+	for ecut, ampl in create_cut_to_amplitude_dict(n).items():
+		# print(ecut, ':\n', ampl)
 		max_value_of_ampl = 0
 		for b in np.arange(0, pi, 0.001):
 			new_value = abs(ampl.subs(x,b))
 			max_value_of_ampl = max(max_value_of_ampl, new_value)
-		print(epenalty,': ', max_value_of_ampl)
+		print(ecut,': ', max_value_of_ampl)
 		lengths.append(max_value_of_ampl)
 	print(n, ' ', sum(lengths), " ", sum(lengths)^2)

@@ -133,8 +133,8 @@ def amplitudes(n, states):
 	return amplitudes
 
 
-start = 5
-end = 5
+start = 3
+end = 10
 
 
 with open('result.txt', 'w') as f:#to delete any content
@@ -147,6 +147,7 @@ for numberOfQubits in range(start, end+1):
 	states = groupsOfStates(numberOfQubits)
 
 	for l, amplitude in amplitudes(numberOfQubits, states).items():
+		print(l)
 
 
 		#here we are creating result mathematica file so that we could run it
@@ -164,7 +165,7 @@ for numberOfQubits in range(start, end+1):
 				file.write(line)
 
 			file.write("\nExport[\"images/plots/" + str(numberOfQubits) + "v" + l + ".jpg\", Plot3D[f, {c, 0, n/2},{d, 0, n}, PlotRange -> All]];\n")
-			file.write("\nExport[\"images/contour-plots/" + str(numberOfQubits) + "v" + l + " c.jpg\", ContourPlot[function[x, y]/2^ammount, {x, -n, n}, {y, -n, n}, PlotLegends -> Automatic, Contours -> 30, PlotPoints -> 300, FrameLabel -> {\[Beta],\[Gamma]}, FrameTicks ->{Range[-Pi, Pi, Pi/2],Range[-Pi, Pi, Pi/2]}]];\n")
+			file.write("\nExport[\"images/contour-plots/" + str(numberOfQubits) + "v" + l + " c.jpg\", ContourPlot[function[x, y]/2^ammount, {x, , n/2}, {y, 0, n/2}, PlotLegends -> Automatic, Contours -> 30, FrameLabel -> {\[Beta],\[Gamma]}, FrameTicks ->{Range[0, Pi/2, Pi/8],Range[0, Pi/2, Pi/8]}]];\n")
 
 		#here we run the mathematica file and then we remove it
 		subprocess.run(["math", "-script", str(numberOfQubits) + "v" + l + ".nb"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)

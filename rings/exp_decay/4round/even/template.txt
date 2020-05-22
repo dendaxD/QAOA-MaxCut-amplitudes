@@ -1,0 +1,2 @@
+file = OpenAppend["maxima.txt"]
+Write[file, NMaxValue[{magnitude[x, y, x2, y2, x3, y3, x4, y4], 0 <= x <= Pi/2, 0 <= y <= Pi, 0 <= x2 <= Pi/2, 0 <= y2 <= Pi, 0 <= x3 <= Pi/2, 0 <= y3 <= Pi, 0 <= x4 <= Pi/2, 0 <= y4 <= Pi},{x, y, x2, y2, x3, y3, x4, y4}, Method -> {"SimulatedAnnealing", "PerturbationScale" -> 15}]];

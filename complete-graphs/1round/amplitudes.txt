@@ -1,0 +1,78 @@
+"\\subsubsection*{""4v0""} \begin{dmath*}"
+  e^{(0.\, -6. i) \gamma } \left(\sin ^4(\beta )+\cos ^4(\beta )\right)-6 \
+e^{(0.\, +2. i) \gamma } \sin ^2(\beta ) \cos ^2(\beta )+(1.\, +0. i) \left(4 \
+i \sin (\beta ) \cos ^3(\beta )-4 i \sin ^3(\beta ) \cos (\beta )\right)"\\en\
+d{dmath*}"
+" \textcolor{orange}{p = "0.7463862450716419"}"
+"\\subsubsection*{""4v1""} \begin{dmath*}"
+  e^{(0.\, -6. i) \gamma } \left(i \sin (\beta ) \cos ^3(\beta )-i \sin \
+^3(\beta ) \cos (\beta )\right)+e^{(0.\, +2. i) \gamma } \left(3 i \sin \
+(\beta ) \cos ^3(\beta )-3 i \sin ^3(\beta ) \cos (\beta )\right)+(1.\, +0. \
+i) \left(\sin ^4(\beta )+\cos ^4(\beta )-6 \sin ^2(\beta ) \cos ^2(\beta \
+)\right)"\\end{dmath*}"
+" \textcolor{orange}{p = "1.0000000000000004"}"
+"\\subsubsection*{""4v2""} \begin{dmath*}"
+  -2 e^{(0.\, -6. i) \gamma } \sin ^2(\beta ) \cos ^2(\beta )+e^{(0.\, +2. i) \
+\gamma } \left(\sin ^4(\beta )+\cos ^4(\beta )-4 \sin ^2(\beta ) \cos \
+^2(\beta )\right)+(1.\, +0. i) \left(4 i \sin (\beta ) \cos ^3(\beta )-4 i \
+\sin ^3(\beta ) \cos (\beta )\right)"\\end{dmath*}"
+" \textcolor{orange}{p = "0.8414766148173958"}"
+"\\subsubsection*{""5v0""} \begin{dmath*}"
+  e^{(0.\, -10. i) \gamma } \left(\cos ^5(\beta )+i \sin ^5(\beta \
+)\right)+e^{(0.\, -2. i) \gamma } \left(5 \sin ^4(\beta ) \cos (\beta )+5 i \
+\sin (\beta ) \cos ^4(\beta )\right)+e^{(0.\, +2. i) \gamma } \left(-10 \sin \
+^2(\beta ) \cos ^3(\beta )-10 i \sin ^3(\beta ) \cos ^2(\beta )\right)"\\end{\
+dmath*}"
+" \textcolor{orange}{p = "0.9999999999999998"}"
+"\\subsubsection*{""5v1""} \begin{dmath*}"
+  e^{(0.\, -10. i) \gamma } \left(\sin ^4(\beta ) \cos (\beta )+i \sin (\beta \
+) \cos ^4(\beta )\right)+e^{(0.\, -2. i) \gamma } \left(i \sin ^5(\beta \
+)+\cos ^5(\beta )-4 \sin ^2(\beta ) \cos ^3(\beta )-4 i \sin ^3(\beta ) \cos \
+^2(\beta )\right)+e^{(0.\, +2. i) \gamma } \left(4 i \sin (\beta ) \cos \
+^4(\beta )-6 \sin ^2(\beta ) \cos ^3(\beta )-6 i \sin ^3(\beta ) \cos \
+^2(\beta )+4 \sin ^4(\beta ) \cos (\beta )\right)"\\end{dmath*}"
+" \textcolor{orange}{p = "0.9027829703323855"}"
+"\\subsubsection*{""5v2""} \begin{dmath*}"
+  e^{(0.\, -10. i) \gamma } \left(-\sin ^2(\beta ) \cos ^3(\beta )-i \sin \
+^3(\beta ) \cos ^2(\beta )\right)+e^{(0.\, -2. i) \gamma } \left(2 i \sin \
+(\beta ) \cos ^4(\beta )-3 \sin ^2(\beta ) \cos ^3(\beta )-3 i \sin ^3(\beta \
+) \cos ^2(\beta )+2 \sin ^4(\beta ) \cos (\beta )\right)+e^{(0.\, +2. i) \
+\gamma } \left(i \sin ^5(\beta )+\cos ^5(\beta )+3 i \sin (\beta ) \cos \
+^4(\beta )-6 \sin ^2(\beta ) \cos ^3(\beta )-6 i \sin ^3(\beta ) \cos \
+^2(\beta )+3 \sin ^4(\beta ) \cos (\beta )\right)"\\end{dmath*}"
+" \textcolor{orange}{p = "0.9812601126931485"}"
+"\\subsubsection*{""6v0""} \begin{dmath*}"
+  e^{(0.\, -15. i) \gamma } \left(\cos ^6(\beta )-\sin ^6(\beta \
+)\right)+e^{(0.\, -5. i) \gamma } \left(6 i \sin (\beta ) \cos ^5(\beta )+6 i \
+\sin ^5(\beta ) \cos (\beta )\right)-20 i e^{(0.\, +3. i) \gamma } \sin \
+^3(\beta ) \cos ^3(\beta )+e^{(0.\, +1. i) \gamma } \left(15 \sin ^4(\beta ) \
+\cos ^2(\beta )-15 \sin ^2(\beta ) \cos ^4(\beta )\right)"\\end{dmath*}"
+" \textcolor{orange}{p = "0.6290833362505667"}"
+"\\subsubsection*{""6v1""} \begin{dmath*}"
+  e^{(0.\, -15. i) \gamma } \left(i \sin (\beta ) \cos ^5(\beta )+i \sin \
+^5(\beta ) \cos (\beta )\right)+e^{(0.\, +1. i) \gamma } \left(5 i \sin \
+(\beta ) \cos ^5(\beta )-20 i \sin ^3(\beta ) \cos ^3(\beta )+5 i \sin \
+^5(\beta ) \cos (\beta )\right)+e^{(0.\, +3. i) \gamma } \left(10 \sin \
+^4(\beta ) \cos ^2(\beta )-10 \sin ^2(\beta ) \cos ^4(\beta )\right)+e^{(0.\, \
+-5. i) \gamma } \left(-\sin ^6(\beta )+\cos ^6(\beta )-5 \sin ^2(\beta ) \cos \
+^4(\beta )+5 \sin ^4(\beta ) \cos ^2(\beta )\right)"\\end{dmath*}"
+" \textcolor{orange}{p = "0.6977792071058941"}"
+"\\subsubsection*{""6v2""} \begin{dmath*}"
+  e^{(0.\, -5. i) \gamma } \left(2 i \sin (\beta ) \cos ^5(\beta )-8 i \sin \
+^3(\beta ) \cos ^3(\beta )+2 i \sin ^5(\beta ) \cos (\beta )\right)+e^{(0.\, \
++3. i) \gamma } \left(4 i \sin (\beta ) \cos ^5(\beta )-12 i \sin ^3(\beta ) \
+\cos ^3(\beta )+4 i \sin ^5(\beta ) \cos (\beta )\right)+e^{(0.\, -15. i) \
+\gamma } \left(\sin ^4(\beta ) \cos ^2(\beta )-\sin ^2(\beta ) \cos ^4(\beta \
+)\right)+e^{(0.\, +1. i) \gamma } \left(-\sin ^6(\beta )+\cos ^6(\beta )-14 \
+\sin ^2(\beta ) \cos ^4(\beta )+14 \sin ^4(\beta ) \cos ^2(\beta )\right)"\\e\
+nd{dmath*}"
+" \textcolor{orange}{p = "0.9374999999999998"}"
+"\\subsubsection*{""6v3""} \begin{dmath*}"
+  -2 i e^{(0.\, -15. i) \gamma } \sin ^3(\beta ) \cos ^3(\beta )+e^{(0.\, +1. \
+i) \gamma } \left(6 i \sin (\beta ) \cos ^5(\beta )-18 i \sin ^3(\beta ) \cos \
+^3(\beta )+6 i \sin ^5(\beta ) \cos (\beta )\right)+e^{(0.\, -5. i) \gamma } \
+\left(6 \sin ^4(\beta ) \cos ^2(\beta )-6 \sin ^2(\beta ) \cos ^4(\beta \
+)\right)+e^{(0.\, +3. i) \gamma } \left(-\sin ^6(\beta )+\cos ^6(\beta )-9 \
+\sin ^2(\beta ) \cos ^4(\beta )+9 \sin ^4(\beta ) \cos ^2(\beta )\right)"\\en\
+d{dmath*}"
+" \textcolor{orange}{p = "0.7898554196671116"}"

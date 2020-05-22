@@ -98,8 +98,8 @@ def createLabelToAmplitudeDict(n, labelToStatesDict):
 
 
 def main():
-	start = 6
-	end = 6
+	start = 4
+	end = 20
 
 
 	with open('result.txt', 'w') as f:#to delete any content

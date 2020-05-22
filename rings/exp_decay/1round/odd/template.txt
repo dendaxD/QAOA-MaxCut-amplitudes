@@ -1,0 +1,5 @@
+file = OpenAppend["maxima.txt"]
+Write[file, NMaxValue[{magnitude[x,y], 0 <= x <= 2*Pi, 0 <= y <= 2*Pi},{x,y}]];
+
+file2 = OpenAppend["maxima2.txt"]
+Write[file2, N[magnitude[Pi/8, Pi/8]]];
