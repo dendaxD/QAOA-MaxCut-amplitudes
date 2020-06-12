@@ -1,0 +1,16 @@
+
+{result, {beta, gamma}} = NMaximize[{nstates*probability[a,b], 0 < a < Pi/2, 0 < b < Pi}, {a, b}, Method -> {"SimulatedAnnealing", "PerturbationScale" -> 3}]
+beta = ToString[NumberForm[Chop[a /. beta,10^(-3)],{4,4}]]
+gamma = ToString[NumberForm[Chop[b /. gamma,10^(-3)],{5,4}]]
+
+file = OpenAppend["result.txt"];
+Write[file, " ", name, " ", result, " ", beta, " ", gamma];
+
+If[nqubits < 11,
+ampl = OpenAppend["amplitudes.txt"];
+Write[ampl, "\subsubsection*{", name, "} \begin{dmath*}", TeXForm[amplitude2[β, γ]], "\end{dmath*}"];
+Write[ampl," \textcolor{orange}{p = ", result, "}"]
+;]
+
+f = probability[c,d]; n = Pi;
+

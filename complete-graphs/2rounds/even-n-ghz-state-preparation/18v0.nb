@@ -1,4 +1,4 @@
-In[85]:=
+In[1]:=
 nqubits = 18;
 name = "18v0";
 nstates = 2;
@@ -9,6 +9,6 @@ probability[x1_,y1_,x2_,y2_] := Abs[amplitude[x1,y1,x2,y2]]^2;
 result = Maximize[{nstates*probability[a, b, c, d], 0 <= a < Pi/2, 0 <= b < Pi, 0 <= c < Pi/2, 0 <= d < Pi}, {a, b, c, d}, Method -> {"SimulatedAnnealing", "PerturbationScale" -> 2}];
 Print[name,  ": ", result]
 
-n = Pi;
-
-During evaluation of In[85]:= 18v0: {1.,{a->1.52716,b->0.785398,c->0.785398,d->2.74889}}
+nstates*probability[Pi/24, Pi/4, Pi/4, Pi/8]
+During evaluation of In[1]:= 18v0: {1.,{a->1.52716,b->0.785398,c->0.785398,d->2.74889}}
+Out[11]= 1.

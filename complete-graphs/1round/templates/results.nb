@@ -4,11 +4,11 @@ beta = ToString[NumberForm[a /. beta,{5,4}]]
 gamma = ToString[NumberForm[b /. gamma,{5,4}]]
 
 file = OpenAppend["result.txt"];
-Write[file, " ", name, " ", result, " ", beta, " ", gamma];
+Write[file, " ", label, " ", result, " ", beta, " ", gamma];
 
 If[nqubits < 7,
 ampl = OpenAppend["amplitudes.txt"];
-Write[ampl, "\subsubsection*{", name, "} \begin{dmath*}", TeXForm[amplitude2[β, γ]], "\end{dmath*}"];
+Write[ampl, "\subsubsection*{", label, "} \begin{dmath*}", TeXForm[amplitude2[β, γ]], "\end{dmath*}"];
 Write[ampl," \textcolor{orange}{p = ", result, "}"]
 ;]
 

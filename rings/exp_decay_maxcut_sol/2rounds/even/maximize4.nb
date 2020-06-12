@@ -1,0 +1,7 @@
+Print["started"]
+amplitude[β_, γ_, β2_, γ2_] := (Exp[-4 I γ2]*(Exp[-4 I γ] (1 Cos[β]^4 + 1 (I Sin[β])^4) + Exp[0 I γ] (4 (I Sin[β])^1 Cos[β]^3 + 4 (I Sin[β])^3 Cos[β]^1 + 4 (I Sin[β])^2 Cos[β]^2) + Exp[4 I γ] (2 (I Sin[β])^2 Cos[β]^2))*(1 Cos[β2]^4 + 1 (I Sin[β2])^4) + Exp[0 I γ2]*(Exp[-4 I γ] (1 (I Sin[β])^1 Cos[β]^3 + 1 (I Sin[β])^3 Cos[β]^1) + Exp[0 I γ] (1 Cos[β]^4 + 1 (I Sin[β])^4 + 6 (I Sin[β])^2 Cos[β]^2 + 2 (I Sin[β])^1 Cos[β]^3 + 2 (I Sin[β])^3 Cos[β]^1) + Exp[4 I γ] (1 (I Sin[β])^1 Cos[β]^3 + 1 (I Sin[β])^3 Cos[β]^1))*(4 (I Sin[β2])^1 Cos[β2]^3 + 4 (I Sin[β2])^3 Cos[β2]^1) + Exp[0 I γ2]*(Exp[-4 I γ] (2 (I Sin[β])^2 Cos[β]^2) + Exp[0 I γ] (4 (I Sin[β])^1 Cos[β]^3 + 4 (I Sin[β])^3 Cos[β]^1 + 1 Cos[β]^4 + 1 (I Sin[β])^4 + 2 (I Sin[β])^2 Cos[β]^2) + Exp[4 I γ] (2 (I Sin[β])^2 Cos[β]^2))*(4 (I Sin[β2])^2 Cos[β2]^2) + Exp[4 I γ2]*(Exp[-4 I γ] (2 (I Sin[β])^2 Cos[β]^2) + Exp[0 I γ] (4 (I Sin[β])^1 Cos[β]^3 + 4 (I Sin[β])^3 Cos[β]^1 + 4 (I Sin[β])^2 Cos[β]^2) + Exp[4 I γ] (1 Cos[β]^4 + 1 (I Sin[β])^4))*(2 (I Sin[β2])^2 Cos[β2]^2))/Sqrt[2^4]
+probability[β_, γ_, β2_, γ2_] := Abs[amplitude[β, γ, β2, γ2]]^2
+file = OpenAppend["maxima.txt"];
+Write[file, NMaxValue[{magnitude[β, γ, β2, γ2], 0 <= β <= Pi/2, 0 <= γ <= Pi/2, 0 <= β2 <= Pi/2, 0 <= γ2 <= Pi/2}, {β, γ, β2, γ2}, Method -> {"SimulatedAnnealing", "PerturbationScale" -> 3}]];
+
+Print["ok"]

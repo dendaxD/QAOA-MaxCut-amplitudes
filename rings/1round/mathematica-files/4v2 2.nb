@@ -4,7 +4,7 @@ function[x_, y_] := $Conjugate[Exp[-4 I y] (2 (I Sin[x])^2 Cos[x]^2) + Exp[0 I y
 
 amplitude[x_,y_] := Exp[-4 I y] (2 (I Sin[x])^2 Cos[x]^2) + Exp[0 I y] (4 (I Sin[x])^1 Cos[x]^3 + 4 (I Sin[x])^3 Cos[x]^1 + 1 Cos[x]^4 + 1 (I Sin[x])^4 + 2 (I Sin[x])^2 Cos[x]^2) + Exp[4 I y] (2 (I Sin[x])^2 Cos[x]^2)
 
-ammount = 4;
+amount = 4;
 name = "4v2 2";
 states = 4;
 
@@ -26,7 +26,7 @@ For[β = 0 , β <= Pi/2, β = β + k,
   	]
  ]
 
-result = NMaximize[{Re[states*function[a, b]/(2^ammount)], x - k < a < x + k, y - k < b < y + k}, {a, b}, Method -> {"SimulatedAnnealing", "PerturbationScale" -> 3}];
+result = NMaximize[{Re[states*function[a, b]/(2^amount)], x - k < a < x + k, y - k < b < y + k}, {a, b}, Method -> {"SimulatedAnnealing", "PerturbationScale" -> 3}];
 
 Print[name,  ": ", result]
 

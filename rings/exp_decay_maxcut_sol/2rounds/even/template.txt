@@ -1,0 +1,4 @@
+file = OpenAppend["maxima.txt"];
+Write[file, NMaxValue[{probability[β, γ, β2, γ2], 0 <= β <= Pi/2, 0 <= γ <= Pi/2, 0 <= β2 <= Pi/2, 0 <= γ2 <= Pi/2}, {β, γ, β2, γ2}, Method -> {"SimulatedAnnealing", "PerturbationScale" -> 3}]];
+
+Print["ok"]

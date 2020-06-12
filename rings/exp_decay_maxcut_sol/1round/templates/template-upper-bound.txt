@@ -1,0 +1,4 @@
+file = OpenAppend["maxima.txt"]
+Write[file, NMaxValue[{Sqrt[termmagnitude[β]], 0 <= β <= Pi/2}, β]];
+
+Print["ok"]

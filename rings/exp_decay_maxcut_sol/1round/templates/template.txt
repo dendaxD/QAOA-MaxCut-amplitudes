@@ -1,0 +1,7 @@
+file = OpenAppend["maxima.txt"]
+Write[file, NMaxValue[{probability[β, γ], 0 <= β <= 2*Pi, 0 <= γ <= 2*Pi}, {β, γ}]];
+
+file2 = OpenAppend["maxima2.txt"]
+Write[file2, N[probability[Pi/8, Pi/8]]];
+
+Print["ok"]

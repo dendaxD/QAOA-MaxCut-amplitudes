@@ -16,7 +16,7 @@ For[β = 0 , β <= Pi/2, β = β + k,
   	]
  ]
 
-result = NMaximize[{Re[states*function[a, b]/(2^ammount)], x - k < a < x + k, y - k < b < y + k}, {a, b}, Method -> {"SimulatedAnnealing", "PerturbationScale" -> 3}];
+result = NMaximize[{Re[states*function[a, b]/(2^amount)], x - k < a < x + k, y - k < b < y + k}, {a, b}, Method -> {"SimulatedAnnealing", "PerturbationScale" -> 3}];
 
 Print[name,  ": ", result]
 

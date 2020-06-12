@@ -4,7 +4,7 @@ function[x_, y_] := $Conjugate[Exp[-8 I y] (1 (I Sin[x])^3 Cos[x]^5 + 1 (I Sin[x
 
 amplitude[x_,y_] := Exp[-8 I y] (1 (I Sin[x])^3 Cos[x]^5 + 1 (I Sin[x])^5 Cos[x]^3) + Exp[-4 I y] (4 (I Sin[x])^2 Cos[x]^6 + 4 (I Sin[x])^6 Cos[x]^2 + 24 (I Sin[x])^4 Cos[x]^4 + 12 (I Sin[x])^3 Cos[x]^5 + 12 (I Sin[x])^5 Cos[x]^3) + Exp[0 I y] (4 (I Sin[x])^1 Cos[x]^7 + 4 (I Sin[x])^7 Cos[x]^1 + 34 (I Sin[x])^5 Cos[x]^3 + 34 (I Sin[x])^3 Cos[x]^5 + 32 (I Sin[x])^4 Cos[x]^4 + 16 (I Sin[x])^2 Cos[x]^6 + 16 (I Sin[x])^6 Cos[x]^2) + Exp[4 I y] (8 (I Sin[x])^2 Cos[x]^6 + 8 (I Sin[x])^6 Cos[x]^2 + 14 (I Sin[x])^4 Cos[x]^4 + 1 Cos[x]^8 + 1 (I Sin[x])^8 + 8 (I Sin[x])^3 Cos[x]^5 + 8 (I Sin[x])^5 Cos[x]^3 + 4 (I Sin[x])^1 Cos[x]^7 + 4 (I Sin[x])^7 Cos[x]^1) + Exp[8 I y] (1 (I Sin[x])^3 Cos[x]^5 + 1 (I Sin[x])^5 Cos[x]^3)
 
-ammount = 8;
+amount = 8;
 name = "8v2 1 2 1 1 1";
 states = 16;
 
@@ -26,7 +26,7 @@ For[β = 0 , β <= Pi/2, β = β + k,
   	]
  ]
 
-result = NMaximize[{Re[states*function[a, b]/(2^ammount)], x - k < a < x + k, y - k < b < y + k}, {a, b}, Method -> {"SimulatedAnnealing", "PerturbationScale" -> 3}];
+result = NMaximize[{Re[states*function[a, b]/(2^amount)], x - k < a < x + k, y - k < b < y + k}, {a, b}, Method -> {"SimulatedAnnealing", "PerturbationScale" -> 3}];
 
 Print[name,  ": ", result]
 

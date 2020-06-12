@@ -1,0 +1,4 @@
+NMaxValue[{magnitude[\[Beta], \[Gamma], \[Beta]2, \[Gamma]2], 
+  0 <= \[Beta] <= Pi/2, 0 <= \[Gamma] <= Pi/2, 0 <= \[Beta]2 <= Pi/2, 
+  0 <= \[Gamma]2 <= Pi/2}, {\[Beta], \[Gamma], \[Beta]2, \[Gamma]2}, 
+ Method -> {"SimulatedAnnealing", "PerturbationScale" -> 3}]

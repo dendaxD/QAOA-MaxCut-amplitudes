@@ -1,0 +1,320 @@
+
+
+*******************************************************************************
+Fri Jul 27 13:53:00 2018
+
+
+FIT:    data read from "neparne.txt"
+        format = z
+        #datapoints = 7
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = (10**(a*x + b))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b            
+   0 1.0001000100e+32   0.00e+00  9.41e+16    1.000000e+00   1.000000e+00
+  46 2.5606244967e-02  -4.05e-01  9.41e-06   -6.680494e-02   2.320333e-01
+
+After 46 iterations the fit converged.
+final sum of squares of residuals : 0.0256062
+rel. change during last iteration : -4.04863e-06
+
+degrees of freedom    (FIT_NDF)                        : 5
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0715629
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00512125
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = -0.0668049       +/- 0.007197     (10.77%)
+b               = 0.232033         +/- 0.04203      (18.11%)
+
+correlation matrix of the fit parameters:
+                a      b      
+a               1.000 
+b              -0.883  1.000 
+
+
+*******************************************************************************
+Fri Jul 27 13:57:13 2018
+
+
+FIT:    data read from "neparne.txt"
+        format = z
+        #datapoints = 7
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = (10**(a*x + b))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b            
+   0 1.0001000100e+32   0.00e+00  9.41e+16    1.000000e+00   1.000000e+00
+  46 2.5606244967e-02  -4.05e-01  9.41e-06   -6.680494e-02   2.320333e-01
+
+After 46 iterations the fit converged.
+final sum of squares of residuals : 0.0256062
+rel. change during last iteration : -4.04863e-06
+
+degrees of freedom    (FIT_NDF)                        : 5
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0715629
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00512125
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = -0.0668049       +/- 0.007197     (10.77%)
+b               = 0.232033         +/- 0.04203      (18.11%)
+
+correlation matrix of the fit parameters:
+                a      b      
+a               1.000 
+b              -0.883  1.000 
+
+
+*******************************************************************************
+Fri Jul 27 14:22:38 2018
+
+
+FIT:    data read from "neparne.txt"
+        format = z
+BREAK: No data to fit
+
+*******************************************************************************
+Fri Jul 27 14:23:28 2018
+
+
+FIT:    data read from "neparne.txt"
+        format = z
+BREAK: No data to fit
+
+*******************************************************************************
+Fri Jul 27 14:25:10 2018
+
+
+FIT:    data read from "neparne.txt"
+        format = z
+        #datapoints = 6
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = (10**(a*x + b))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b            
+   0 1.0001000100e+32   0.00e+00  1.02e+17    1.000000e+00   1.000000e+00
+  50 2.8975743724e-03   0.00e+00  1.02e+06   -8.263939e-02   3.676979e-01
+
+After 50 iterations the fit converged.
+final sum of squares of residuals : 0.00289757
+rel. change during last iteration : 0
+
+degrees of freedom    (FIT_NDF)                        : 4
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0269146
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.000724394
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = -0.0826394       +/- 0.004244     (5.136%)
+b               = 0.367698         +/- 0.02966      (8.067%)
+
+correlation matrix of the fit parameters:
+                a      b      
+a               1.000 
+b              -0.947  1.000 
+
+
+*******************************************************************************
+Fri Jul 27 14:31:44 2018
+
+
+FIT:    data read from "neparne.txt"
+        format = z
+        #datapoints = 6
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = (10**(a*x + b))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b            
+   0 1.0001000100e+32   0.00e+00  1.02e+17    1.000000e+00   1.000000e+00
+  50 2.8975743724e-03   0.00e+00  1.02e+06   -8.263939e-02   3.676979e-01
+
+After 50 iterations the fit converged.
+final sum of squares of residuals : 0.00289757
+rel. change during last iteration : 0
+
+degrees of freedom    (FIT_NDF)                        : 4
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0269146
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.000724394
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = -0.0826394       +/- 0.004244     (5.136%)
+b               = 0.367698         +/- 0.02966      (8.067%)
+
+correlation matrix of the fit parameters:
+                a      b      
+a               1.000 
+b              -0.947  1.000 
+
+
+*******************************************************************************
+Fri Jul 27 14:33:17 2018
+
+
+FIT:    data read from "neparne.txt"
+        format = z
+        #datapoints = 6
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = (10**(a*x + b))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b            
+   0 1.0001000100e+32   0.00e+00  1.02e+17    1.000000e+00   1.000000e+00
+  50 2.8975743724e-03   0.00e+00  1.02e+06   -8.263939e-02   3.676979e-01
+
+After 50 iterations the fit converged.
+final sum of squares of residuals : 0.00289757
+rel. change during last iteration : 0
+
+degrees of freedom    (FIT_NDF)                        : 4
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0269146
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.000724394
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = -0.0826394       +/- 0.004244     (5.136%)
+b               = 0.367698         +/- 0.02966      (8.067%)
+
+correlation matrix of the fit parameters:
+                a      b      
+a               1.000 
+b              -0.947  1.000 
+
+
+*******************************************************************************
+Fri Jul 27 14:35:15 2018
+
+
+FIT:    data read from "neparne.txt"
+        format = z
+        #datapoints = 6
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = (10**(a*x + b))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b            
+   0 1.0001000100e+32   0.00e+00  1.02e+17    1.000000e+00   1.000000e+00
+  50 2.8975743724e-03   0.00e+00  1.02e+06   -8.263939e-02   3.676979e-01
+
+After 50 iterations the fit converged.
+final sum of squares of residuals : 0.00289757
+rel. change during last iteration : 0
+
+degrees of freedom    (FIT_NDF)                        : 4
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0269146
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.000724394
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = -0.0826394       +/- 0.004244     (5.136%)
+b               = 0.367698         +/- 0.02966      (8.067%)
+
+correlation matrix of the fit parameters:
+                a      b      
+a               1.000 
+b              -0.947  1.000 
+
+
+*******************************************************************************
+Wed Nov 14 07:28:47 2018
+
+
+FIT:    data read from "max0.txt"
+        format = z
+BREAK: No data to fit
+
+*******************************************************************************
+Wed Nov 14 07:31:15 2018
+
+
+FIT:    data read from "max0.txt"
+        format = z
+BREAK: No data to fit
+
+*******************************************************************************
+Wed Nov 14 07:33:11 2018
+
+
+FIT:    data read from "max0.txt"
+        format = z
+        #datapoints = 4
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = (10**(a*x + b))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b            
+   0 1.0001000100e+24   0.00e+00  9.11e+12    1.000000e+00   1.000000e+00
+  33 1.2211137786e-03  -9.86e-06  9.11e+00   -7.778128e-02   3.388917e-01
+
+After 33 iterations the fit converged.
+final sum of squares of residuals : 0.00122111
+rel. change during last iteration : -9.85871e-11
+
+degrees of freedom    (FIT_NDF)                        : 2
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0247094
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.000610557
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = -0.0777813       +/- 0.004837     (6.218%)
+b               = 0.338892         +/- 0.03229      (9.529%)
+
+correlation matrix of the fit parameters:
+                a      b      
+a               1.000 
+b              -0.962  1.000 
+
+
+*******************************************************************************
+Wed Nov 14 07:33:44 2018
+
+
+FIT:    data read from "max0.txt"
+        format = z
+        #datapoints = 5
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = (10**(a*x + b))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b            
+   0 1.0001000100e+28   0.00e+00  9.64e+14    1.000000e+00   1.000000e+00
+  38 2.0975379546e-03  -7.28e-01  9.64e-21   -8.072696e-02   3.562081e-01
+
+After 38 iterations the fit converged.
+final sum of squares of residuals : 0.00209754
+rel. change during last iteration : -7.28131e-06
+
+degrees of freedom    (FIT_NDF)                        : 3
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.026442
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.000699179
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = -0.080727        +/- 0.004505     (5.58%)
+b               = 0.356208         +/- 0.03099      (8.7%)
+
+correlation matrix of the fit parameters:
+                a      b      
+a               1.000 
+b              -0.953  1.000 

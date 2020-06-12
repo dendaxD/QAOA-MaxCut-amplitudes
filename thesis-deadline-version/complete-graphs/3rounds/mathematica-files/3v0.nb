@@ -1,0 +1,11 @@
+nqubits = 3;
+name = "3v0";
+nstates = 2;
+
+amplitude[x1_,y1_,x2_,y2_,x3_,y3_] := (Exp[-3.0 I y3]*(Exp[-3.0 I y2]*(Exp[-3.0 I y1] (1 Cos[x1]^3 + 1 (-I Sin[x1])^3) + Exp[1.0 I y1] (3 (-I Sin[x1])^1 Cos[x1]^2 + 3 (-I Sin[x1])^2 Cos[x1]^1))*(1 Cos[x2]^3 + 1 (-I Sin[x2])^3) + Exp[1.0 I y2]*(Exp[-3.0 I y1] (1 (-I Sin[x1])^1 Cos[x1]^2 + 1 (-I Sin[x1])^2 Cos[x1]^1) + Exp[1.0 I y1] (1 Cos[x1]^3 + 1 (-I Sin[x1])^3 + 2 (-I Sin[x1])^2 Cos[x1]^1 + 2 (-I Sin[x1])^1 Cos[x1]^2))*(3 (-I Sin[x2])^1 Cos[x2]^2 + 3 (-I Sin[x2])^2 Cos[x2]^1))*(1 Cos[x3]^3 + 1 (-I Sin[x3])^3) + Exp[1.0 I y3]*(Exp[-3.0 I y2]*(Exp[-3.0 I y1] (1 Cos[x1]^3 + 1 (-I Sin[x1])^3) + Exp[1.0 I y1] (3 (-I Sin[x1])^1 Cos[x1]^2 + 3 (-I Sin[x1])^2 Cos[x1]^1))*(1 (-I Sin[x2])^1 Cos[x2]^2 + 1 (-I Sin[x2])^2 Cos[x2]^1) + Exp[1.0 I y2]*(Exp[-3.0 I y1] (1 (-I Sin[x1])^1 Cos[x1]^2 + 1 (-I Sin[x1])^2 Cos[x1]^1) + Exp[1.0 I y1] (1 Cos[x1]^3 + 1 (-I Sin[x1])^3 + 2 (-I Sin[x1])^2 Cos[x1]^1 + 2 (-I Sin[x1])^1 Cos[x1]^2))*(1 Cos[x2]^3 + 1 (-I Sin[x2])^3 + 2 (-I Sin[x2])^2 Cos[x2]^1 + 2 (-I Sin[x2])^1 Cos[x2]^2))*(3 (-I Sin[x3])^1 Cos[x3]^2 + 3 (-I Sin[x3])^2 Cos[x3]^1))/Sqrt[2^nqubits];
+probability[x1_,y1_,x2_,y2_,x3_,y3_] := Abs[amplitude[x1,y1,x2,y2,x3,y3]]^2;
+
+result = Maximize[{nstates*probability[a, b, c, d, e, f], 0 <= a < Pi/2, 0 <= b < Pi, 0 <= c < Pi/2, 0 <= d < Pi, 0 <= e < Pi/2, 0 <= f < Pi}, {a, b, c, d, e, f}, Method -> {"SimulatedAnnealing", "PerturbationScale" -> 2}];
+Print[name,  ": ", result]
+
+n = Pi;

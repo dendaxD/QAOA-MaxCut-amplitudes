@@ -1,0 +1,2 @@
+same: β₁ = β₂ & γ₁ = γ₂
+different: β₁, β₂, γ₁, γ₂ arbitrary

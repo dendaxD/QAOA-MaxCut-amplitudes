@@ -134,7 +134,7 @@ def amplitudes(n, states):
 
 
 start = 3
-end = 10
+end = 16
 
 
 with open('result.txt', 'w') as f:#to delete any content
@@ -156,7 +156,7 @@ for numberOfQubits in range(start, end+1):
 			file.write	(	"$Conjugate[x_] := x /. Complex[a_, b_] :> a - I b;\n" +
 					  		"function[x_, y_] := $Conjugate[" + amplitude + "]*\n(" + amplitude + ")\n\n" +
 					  		"amplitude[x_,y_] := " + amplitude + "\n" + 
-					  		"ammount = " + str(numberOfQubits) + ";\n" + 
+					  		"amount = " + str(numberOfQubits) + ";\n" + 
 					  		"name = \"" + str(numberOfQubits) + "v" + l + "\";\n" +
 					  		"states = " + str(len(states[l])) + ";\n\n"
 						)
@@ -165,10 +165,24 @@ for numberOfQubits in range(start, end+1):
 				file.write(line)
 
 			file.write("\nExport[\"images/plots/" + str(numberOfQubits) + "v" + l + ".jpg\", Plot3D[f, {c, 0, n/2},{d, 0, n}, PlotRange -> All]];\n")
-			file.write("\nExport[\"images/contour-plots/" + str(numberOfQubits) + "v" + l + " c.jpg\", ContourPlot[function[x, y]/2^ammount, {x, , n/2}, {y, 0, n/2}, PlotLegends -> Automatic, Contours -> 30, FrameLabel -> {\[Beta],\[Gamma]}, FrameTicks ->{Range[0, Pi/2, Pi/8],Range[0, Pi/2, Pi/8]}]];\n")
+			file.write("\nExport[\"images/contour-plots/" + str(numberOfQubits) + "v" + l + " c.jpg\", ContourPlot[function[x, y]/2^amount, {x, 0, n/2}, {y, 0, n/2}, PlotLegends -> Automatic, Contours -> 30, FrameLabel -> {\\[Beta],\\[Gamma]}, FrameTicks ->{Range[0, Pi/2, Pi/8],Range[0, Pi/2, Pi/8]}]];\n")
 
 		#here we run the mathematica file and then we remove it
-		subprocess.run(["math", "-script", str(numberOfQubits) + "v" + l + ".nb"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+		while True:
+			try:
+				cpi = subprocess.run(
+					["math", "-script", str(numberOfQubits) + "v" + l + ".nb"],
+					stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=10,
+					check=True
+				)
+				if "ok" in cpi.stdout.decode().split('\n'):
+					break
+				else:
+					print("retrying")
+			except (subprocess.TimeoutExpired, subprocess.CalledProcessError) as e:
+				print(e)
+				print("retrying") 
+
 		remove(str(numberOfQubits) + "v" + l + ".nb")
 
 
@@ -193,7 +207,7 @@ for numberOfQubits in range(start, end+1):
 			f.write	(	"$Conjugate[x_] := x /. Complex[a_, b_] :> a - I b;\n" +
 					  		"function[x_, y_] := $Conjugate[" + amplitude + "]*\n(" + amplitude + ")\n\n" +
 					  		"amplitude[x_,y_] := " + amplitude + "\n\n" + 
-					  		"ammount = " + str(numberOfQubits) + ";\n" + 
+					  		"amount = " + str(numberOfQubits) + ";\n" + 
 					  		"name = \"" + str(numberOfQubits) + "v" + l + "\";\n" +
 					  		"states = " + str(len(states[l])) + ";\n\n"
 			)

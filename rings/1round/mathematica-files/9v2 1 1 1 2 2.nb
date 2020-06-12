@@ -4,7 +4,7 @@ function[x_, y_] := $Conjugate[Exp[-9 I y] (1 (I Sin[x])^4 Cos[x]^5 + 1 (I Sin[x
 
 amplitude[x_,y_] := Exp[-9 I y] (1 (I Sin[x])^4 Cos[x]^5 + 1 (I Sin[x])^5 Cos[x]^4) + Exp[-5 I y] (11 (I Sin[x])^3 Cos[x]^6 + 11 (I Sin[x])^6 Cos[x]^3 + 24 (I Sin[x])^5 Cos[x]^4 + 24 (I Sin[x])^4 Cos[x]^5 + 1 (I Sin[x])^2 Cos[x]^7 + 1 (I Sin[x])^7 Cos[x]^2) + Exp[-1 I y] (57 (I Sin[x])^4 Cos[x]^5 + 57 (I Sin[x])^5 Cos[x]^4 + 45 (I Sin[x])^6 Cos[x]^3 + 45 (I Sin[x])^3 Cos[x]^6 + 21 (I Sin[x])^2 Cos[x]^7 + 21 (I Sin[x])^7 Cos[x]^2 + 3 (I Sin[x])^1 Cos[x]^8 + 3 (I Sin[x])^8 Cos[x]^1) + Exp[3 I y] (24 (I Sin[x])^3 Cos[x]^6 + 24 (I Sin[x])^6 Cos[x]^3 + 41 (I Sin[x])^5 Cos[x]^4 + 41 (I Sin[x])^4 Cos[x]^5 + 12 (I Sin[x])^7 Cos[x]^2 + 12 (I Sin[x])^2 Cos[x]^7 + 6 (I Sin[x])^1 Cos[x]^8 + 6 (I Sin[x])^8 Cos[x]^1 + 1 Cos[x]^9 + 1 (I Sin[x])^9) + Exp[7 I y] (2 (I Sin[x])^2 Cos[x]^7 + 2 (I Sin[x])^7 Cos[x]^2 + 3 (I Sin[x])^4 Cos[x]^5 + 3 (I Sin[x])^5 Cos[x]^4 + 4 (I Sin[x])^6 Cos[x]^3 + 4 (I Sin[x])^3 Cos[x]^6)
 
-ammount = 9;
+amount = 9;
 name = "9v2 1 1 1 2 2";
 states = 18;
 
@@ -26,7 +26,7 @@ For[β = 0 , β <= Pi/2, β = β + k,
   	]
  ]
 
-result = NMaximize[{Re[states*function[a, b]/(2^ammount)], x - k < a < x + k, y - k < b < y + k}, {a, b}, Method -> {"SimulatedAnnealing", "PerturbationScale" -> 3}];
+result = NMaximize[{Re[states*function[a, b]/(2^amount)], x - k < a < x + k, y - k < b < y + k}, {a, b}, Method -> {"SimulatedAnnealing", "PerturbationScale" -> 3}];
 
 Print[name,  ": ", result]
 

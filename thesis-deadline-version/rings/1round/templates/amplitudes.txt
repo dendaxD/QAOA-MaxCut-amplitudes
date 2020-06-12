@@ -1,0 +1,3 @@
+"\\subsubsection*{"name"} \begin{dmath*}"\text{amplitude}(\beta ,\gamma )"\\e\
+nd{dmath*}"
+" \textcolor{orange}{p = "result"}"
